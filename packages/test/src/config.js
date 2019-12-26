@@ -33,7 +33,7 @@ module.exports = {
     URL_PREFIX: '',
   },
   transformIgnorePatterns: [
-    '/node_modules/(?!(@theforeman/vendor-core/lib|@theforeman/env/test)/)',
+    '/node_modules/(?!(@theforeman/vendor-core/lib|@theforeman/test/src)/)',
   ],
 
   transform: {
@@ -52,7 +52,7 @@ module.exports = {
   setupFiles: [
     'raf/polyfill',
     'jest-prop-type-error',
-    './test/test_setup.js',
+    './src/test_setup.js',
     `${cwd}/webpack/test_setup.js`,
   ],
 };

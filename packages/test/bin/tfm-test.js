@@ -4,9 +4,9 @@ const commander = require('commander');
 const { version } = require('../package.json');
 const path = require('path');
 
-const { runScript, remainingArgs } = require('../test/helpers');
+const { runScript, remainingArgs } = require('../src/helpers');
 
-const envRoot = path.resolve(__dirname, '../');
+const testRoot = path.resolve(__dirname, '../');
 const program = new commander.Command();
 program.version(version);
 
@@ -22,8 +22,8 @@ const { plugin, config } = program;
 const overrideConfig = () => {
   if (config) return config;
   return plugin
-    ? `${envRoot}/test/pluginConfig.js`
-    : `${envRoot}/test/config.js`;
+    ? `${testRoot}/src/pluginConfig.js`
+    : `${testRoot}/src/config.js`;
 };
 const configArg = ['--config', overrideConfig()];
 const jestArgs = configArg.concat(remainingArgs(program));
