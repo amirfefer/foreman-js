@@ -16,6 +16,7 @@ module.exports = {
     '!webpack/stories/**',
     '!webpack/**/*stories.js',
   ],
+  snapshotSerializers: ['enzyme-to-json/serializer'],
   coverageReporters: ['lcov'],
   coverageDirectory: `${cwd}/coverage`,
   unmockedModulePathPatterns: ['react', 'node_modules/'],
