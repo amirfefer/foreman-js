@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/vendor-core",
-  "version": "3.9.4-test.0",
+  "version": "3.9.4-test.1",
   "description": "foreman supported 3rd-party node_modules",
   "license": "MIT",
   "repository": {
@@ -83,5 +83,6 @@
     "urijs": "^1.18.10",
     "uuid": "^3.3.2",
     "yup": "^0.27.0"
-  }
+  },
+  "gitHead": "630deaf51fb0dccbb4637103cfeb2eae4ce63e67"
 }

@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/builder",
-  "version": "3.9.4-test.0",
+  "version": "3.9.4-test.1",
   "description": "Build production and development bundle files for foreman core and plugins.",
   "author": "Avi Sharvit <sharvita@gmail.com>",
   "homepage": "https://github.com/theforeman/foreman-js#readme",
@@ -40,5 +40,6 @@
   },
   "peerDependencies": {
     "@babel/core": "^7.7.0"
-  }
+  },
+  "gitHead": "630deaf51fb0dccbb4637103cfeb2eae4ce63e67"
 }
