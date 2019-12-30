@@ -1,3 +1,4 @@
-export { default } from 'enzyme-to-json';
+export { MockAdapter } from 'axios-mock-adapter';
+
 export * from 'enzyme';
 export * from 'react-redux-test-utils';

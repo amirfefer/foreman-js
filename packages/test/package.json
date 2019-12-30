@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/test",
-  "version": "3.10.1",
+  "version": "3.10.2-test-jest.0",
   "description": "Test utils for theforeman",
   "author": "Amir Fefer <amirfefer@gmail.com>",
   "homepage": "https://github.com/theforeman/foreman-js#readme",
@@ -20,15 +20,18 @@
     "test": "echo \"@theforeman/env does not contain any tests at the moment.\""
   },
   "bin": {
-    "tfm-test": "./bin/tfm-test.js"
+    "tfm-test": "./bin/tfm-test.js",
+    "tfm-coveralls": "./bin/tfm-coveralls.js"
   },
   "dependencies": {
-    "@theforeman/builder": "^3.10.1",
-    "@theforeman/vendor": "^3.10.1",
-    "@theforeman/vendor-dev": "^3.10.1",
+    "@theforeman/builder": "^3.10.2-test-jest.0",
+    "@theforeman/vendor": "^3.10.2-test-jest.0",
+    "@theforeman/vendor-dev": "^3.10.2-test-jest.0",
+    "axios-mock-adapter": "^1.10.0",
     "babel-jest": "^24.9.0",
     "babel-plugin-dynamic-import-node": "^2.0.0",
     "commander": "^4.0.1",
+    "coveralls": "^3.0.9",
     "enzyme": "^3.4.0",
     "enzyme-adapter-react-16": "^1.4.0",
     "enzyme-to-json": "^3.2.1",
