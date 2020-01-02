@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "../../.eslintrc",
+    "./node_modules/@theforeman/vendor-dev/eslint.extends.js"
+  ]
+}

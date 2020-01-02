@@ -17,7 +17,8 @@
     "directory": "packages/test"
   },
   "scripts": {
-    "test": "echo \"@theforeman/env does not contain any tests at the moment.\""
+    "test": "echo \"@theforeman/env does not contain any tests at the moment.\"",
+    "lint": "eslint ."
   },
   "bin": {
     "tfm-test": "./bin/tfm-test.js",
@@ -26,6 +27,7 @@
   "dependencies": {
     "@theforeman/builder": "^3.12.0",
     "@theforeman/vendor-dev": "^3.12.0",
+    "axios-mock-adapter": "^1.10.0",
     "babel-jest": "^24.9.0",
     "babel-plugin-dynamic-import-node": "^2.0.0",
     "commander": "^4.0.1",
